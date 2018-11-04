@@ -1,0 +1,122 @@
+body{
+  font-family: 'Open-sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin:0;
+  padding:0;
+
+  background: white url(https://static.giantbomb.com/uploads/square_small/0/6087/2437349-pikachu.png) no-repeat bottom right;
+}
+
+img{
+  width:450px;
+  height:300px
+}
+
+h1 {
+	color: #333;
+	text-align: center;
+	background-color: rgb(43, 214, 236);
+	margin: 5px;
+	padding: 20px;
+
+	border-style: dashed;
+    border-width: 3px;
+    border-color: rgb(253, 121, 121);
+
+}
+
+h1:hover {
+    transition: all 5s linear 0;
+/* transform: rotate(-10deg); */
+	color: tomato;
+	background: radial-gradient(yellow, orange);
+	background-size: 10px;
+
+}
+
+h2 {
+	color: royalblue;
+}
+
+h3 {
+	color: darkblue;
+}
+
+#main-header{
+  border-bottom: 1px solid #56a79a;
+}
+
+
+.top-box {
+	display:grid;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+
+.container {
+  margin:auto;
+}
+
+#navbar {
+	text-align: center;
+	background-color: white;
+	margin: 5px;
+	font-size: 20px;
+}
+#navbar li{
+  display:inline;
+  list-style: none;
+
+}
+
+#navbar a{
+  text-decoration:none;
+  font-weight: bold;
+  color: black;
+}
+
+#navbar li.current a, #navbar a:hover{
+  color: black;
+  border-bottom: 3px solid DarkSlateGray;
+  padding-bottom:3px;
+}
+
+#info {
+	margin: 10px;
+	padding: 10px;
+	border-style: dashed;
+	border-color: royalblue;
+}
+
+
+#four_squares_text {
+	text-align: center;
+}
+#four_squares {
+	display: flex;
+ 	flex-direction: row;
+ 	justify-content: flex-start;
+}
+
+
+#tables {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	padding: 20px;
+}
+
+#pokemon-image {
+	position: absolute;
+	left: 800px;
+}
+
+#new-list {
+	margin: 20px;
+}
+
+
+
