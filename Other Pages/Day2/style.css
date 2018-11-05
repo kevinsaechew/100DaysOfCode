@@ -19,6 +19,10 @@ a{
 	font-weight: bold;
 }
 
+p{
+	margin: 20px;
+}
+
 h1 {
 	color: #333;
 	text-align: center;
