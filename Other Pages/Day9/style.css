@@ -4,12 +4,6 @@ body{
   line-height: 1.5em;
   margin:0;
   padding:0;
-
-}
-
-img{
-  width:450px;
-  height:300px
 }
 
 canvas {
@@ -21,11 +15,25 @@ canvas {
 	z-index:-1;
 	}
 
+img{
+  width:450px;
+  height:300px
+}
+
 a{
 	font-family: 'Open-sans', sans-serif;
 	font-size: 18px;
 	color: rgb(124, 12, 124);
 	font-weight: bold;
+}
+
+p{
+	margin: 20px;
+}
+
+button{
+	display:block;
+	margin: 10px;
 }
 
 h1 {
@@ -126,7 +134,10 @@ h3 {
 
 #pokemon-image {
 	position: absolute;
-	left: 1000px;
+	left: 1200px;
+	top: 400px;
+	opacity: 0.5;
+	z-index:1;
 	pointer-events:none;
 
 }
@@ -150,7 +161,5 @@ h3 {
 #cryptocurrency-canvas {
 	background-color: rgba(252, 252, 252, 0.986);
 }
-
-
 
 
