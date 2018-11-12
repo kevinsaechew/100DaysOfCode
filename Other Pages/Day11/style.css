@@ -1,0 +1,191 @@
+body{
+  font-family: 'Open-sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin:0;
+  padding:0;
+}
+
+canvas {
+	position:absolute;
+	top:0;
+	left:0;
+	width:120%;
+	height:120%;
+	z-index:-1;
+	}
+
+
+button{
+	display:block;
+	margin: 10px;
+}
+
+h1 {
+	color: #333;
+	text-align: center;
+	background-color: rgb(43, 214, 236);
+	margin: 5px;
+	padding: 20px;
+
+	border-style: dashed;
+    border-width: 3px;
+    border-color: rgb(253, 121, 121);
+
+}
+
+h1:hover {
+    transition: all 5s linear 0;
+/* transform: rotate(-10deg); */
+	color: tomato;
+	background: radial-gradient(yellow, orange);
+	background-size: 10px;
+
+}
+
+h2 {
+	color: royalblue;
+}
+
+h3 {
+	color: darkblue;
+}
+
+
+
+#pokemon-image {
+	position: absolute;
+	left: 1200px;
+	top: 400px;
+	opacity: 0.5;
+	z-index:1;
+	pointer-events:none;
+	visibility: hidden;
+
+}
+
+#pikachu-image {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 1400px;
+	top: 100px;
+	pointer-events:none;
+	visibility: hidden;
+}
+
+#cryptocurrency-canvas {
+	background-color: rgba(44, 40, 40, 0.212);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 10px;
+  color: #444;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  z-index:-1;
+
+  position:relative;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  height: 100px;
+}
+
+
+ul {
+	padding: 0; }
+  
+  li {
+	list-style-type: none;
+	font-weight: bold;
+	font-size: 3.5rem;
+	position: relative; }
+  
+  li:focus {
+	border: 10px solid blue; }
+  
+  span {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	color: #fff;
+	text-shadow: 3px 2px 6px rgba(0, 0, 0, 0.4); }
+  
+  ul {
+	/* autoprefixer: off */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-auto-rows: 150px;
+	grid-auto-flow: dense;
+	grid-gap: 1em;
+	margin: 1em;
+	}
+  
+  li.highlight-box {
+	grid-row: span 2;
+	grid-column: span 2; }
+  
+  li.highlight-tall {
+	grid-row: span 2; }
+  
+  li.highlight-wide {
+	grid-column: span 2; }
+  
+  img {
+	display: block;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	height: 100%;
+	border: 2px solid black;
+	-webkit-box-shadow: px 3px 8px rgba(0, 0, 0, 0.5);
+			box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5); }
+  
+  .warning {
+	color: red;
+	font-size: 200%; }
+  
+  @supports (display: grid) {
+	.warning {
+	  display: none; } }
+
+	  html {
+		font-family: sans-serif; /* 1 */
+		-ms-text-size-adjust: 100%; /* 2 */
+		-webkit-text-size-adjust: 100%; /* 2 */
+	  }
+
+	  html {
+		font-family: georgia, serif;
+		text-rendering: optimizeLegibility;
+		-webkit-font-kerning: normal;
+				font-kerning: normal;
+		-webkit-text-size-adjust: 100%;
+		   -moz-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+				text-size-adjust: 100%; }
+	  
+	  img {
+		width: 100%; }
+	  
+	  .element-invisible {
+		position: absolute !important;
+		height: 1px;
+		width: 1px;
+		overflow: hidden;
+		clip: rect(1px 1px 1px 1px); }
+	  
+
+		#footer {
+			position:relative;
+			bottom:0;
+			width:100%;
+			height:60px;   /* Height of the footer */
+		}
