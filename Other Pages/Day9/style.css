@@ -162,4 +162,14 @@ h3 {
 	background-color: rgba(252, 252, 252, 0.986);
 }
 
+#footer {
+	display: flex;
+ 	flex-direction: row;
+ 	justify-content: flex-start;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:60px;   /* Height of the footer */
+}
+
 

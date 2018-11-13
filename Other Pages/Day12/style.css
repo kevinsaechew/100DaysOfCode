@@ -4,12 +4,6 @@ body{
   line-height: 1.5em;
   margin:0;
   padding:0;
-
-}
-
-img{
-  width:450px;
-  height:300px
 }
 
 canvas {
@@ -21,6 +15,11 @@ canvas {
 	z-index:-1;
 	}
 
+img{
+  width:450px;
+  height:300px
+}
+
 a{
 	font-family: 'Open-sans', sans-serif;
 	font-size: 18px;
@@ -28,11 +27,19 @@ a{
 	font-weight: bold;
 }
 
+p{
+	margin: 20px;
+}
+
+button{
+	display:block;
+	margin: 10px;
+}
+
 h1 {
 	color: #333;
 	text-align: center;
-	background: radial-gradient(circle at bottom center, rgb(121, 251, 255) 15px, rgb(8, 168, 196));
-	box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.1);  
+	background-color: rgb(43, 214, 236);
 	margin: 5px;
 	padding: 20px;
 
@@ -52,7 +59,7 @@ h1:hover {
 }
 
 h2 {
-	color: royalblue;
+	color: rgb(11, 58, 199);
 }
 
 h3 {
@@ -76,38 +83,6 @@ h3 {
   margin:auto;
 }
 
-#navbar {
-	text-align: center;
-	background-color: white;
-	margin: 5px;
-	font-size: 20px;
-}
-#navbar li{
-  display:inline;
-  list-style: none;
-
-}
-
-#navbar a{
-  text-decoration:none;
-  font-weight: bold;
-  color: black;
-}
-
-#navbar li.current a, #navbar a:hover{
-  color: black;
-  border-bottom: 3px solid DarkSlateGray;
-  padding-bottom:3px;
-}
-
-#info {
-	margin: 10px;
-	padding: 10px;
-	border-style: dashed;
-	border-color: royalblue;
-}
-
-
 
 #tables {
 	display: flex;
@@ -118,7 +93,10 @@ h3 {
 
 #pokemon-image {
 	position: absolute;
-	left: 1000px;
+	left: 1200px;
+	top: 400px;
+	opacity: 0.5;
+	z-index:1;
 	pointer-events:none;
 
 }
@@ -153,4 +131,63 @@ h3 {
 	height:60px;   /* Height of the footer */
 }
 
+.banner {
+	display: block;
+	min-height: 200px;
+	width: 100%;
+	position: relative;
+}
+.typed_wrap {
+	display: block;
+	border: 4px solid #49bad6;
+	width: 490px;
+	height: auto;
+	padding: 30px;
+	background: rgb(221, 221, 221);
+	opacity: 50%;
+	
+	/*centers it in the .banner*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
 
+.typed_wrap h2 {
+	display: inline;
+}
+
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+   opacity: 0;
+	display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
