@@ -1,0 +1,156 @@
+body{
+  font-family: 'Open-sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin:0;
+  padding:0;
+
+}
+
+img{
+  width:450px;
+  height:300px
+}
+
+canvas {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	}
+
+a{
+	font-family: 'Open-sans', sans-serif;
+	font-size: 18px;
+	color: rgb(124, 12, 124);
+	font-weight: bold;
+}
+
+h1 {
+	color: #333;
+	text-align: center;
+	background: radial-gradient(circle at bottom center, rgb(121, 251, 255) 15px, rgb(8, 168, 196));
+	box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.1);  
+	margin: 5px;
+	padding: 20px;
+
+	border-style: dashed;
+    border-width: 3px;
+    border-color: rgb(253, 121, 121);
+
+}
+
+h1:hover {
+    transition: all 5s linear 0;
+/* transform: rotate(-10deg); */
+	color: tomato;
+	background: radial-gradient(yellow, orange);
+	background-size: 10px;
+
+}
+
+h2 {
+	color: royalblue;
+}
+
+h3 {
+	color: darkblue;
+}
+
+#main-header{
+  border-bottom: 1px solid #56a79a;
+}
+
+
+.top-box {
+	display:grid;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+
+.container {
+  margin:auto;
+}
+
+#navbar {
+	text-align: center;
+	background-color: white;
+	margin: 5px;
+	font-size: 20px;
+}
+#navbar li{
+  display:inline;
+  list-style: none;
+
+}
+
+#navbar a{
+  text-decoration:none;
+  font-weight: bold;
+  color: black;
+}
+
+#navbar li.current a, #navbar a:hover{
+  color: black;
+  border-bottom: 3px solid DarkSlateGray;
+  padding-bottom:3px;
+}
+
+#info {
+	margin: 10px;
+	padding: 10px;
+	border-style: dashed;
+	border-color: royalblue;
+}
+
+
+
+#tables {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	padding: 20px;
+}
+
+#pokemon-image {
+	position: absolute;
+	left: 1000px;
+	pointer-events:none;
+
+}
+
+#pikachu-image {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 1400px;
+	top: 100px;
+	pointer-events:none;
+
+}
+
+#new-list {
+	margin: 20px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: rgb(90, 90, 90);
+}
+
+#cryptocurrency-canvas {
+	background-color: rgba(252, 252, 252, 0.986);
+}
+
+#footer {
+	display: flex;
+ 	flex-direction: row;
+ 	justify-content: flex-start;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:60px;   /* Height of the footer */
+}
+
+
